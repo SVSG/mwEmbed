@@ -90,6 +90,9 @@
 	mw.hasMouseEvents = function(){
 		return !mw.isIOS() && !mw.isAndroid();
 	};
+	mw.isIOS80 = function(){
+		return /Version\/8/.test( navigator.userAgent ) && mw.isIOS();
+	};
 
 	/**
 	 * Fallforward system by default prefers flash.
